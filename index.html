@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Página com barra deslizante">
+    <meta name="keywords" content="barra, delizante, página">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Laura Sena">
+    <link rel="shortcut icon" href="midia/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto - Site com Barra Deslizante</title>
+</head>
+<body>
+    <div class="box">
+        <div class="barra">
+            <input type="range" min="0" max="100" value="20">
+        </div>
+        <div class="valor">100</div>
+    </div>
+
+    <!-- js que controla o valor conforme a barra desliza -->
+    <script>
+        const barra = document.querySelector("input");
+        const valor = document.querySelector(".valor");
+        valor.textContent = barra.value;
+        barra.oninput = function () {
+            valor.textContent = this.value;
+        }
+    </script>
+</body>
+</html>

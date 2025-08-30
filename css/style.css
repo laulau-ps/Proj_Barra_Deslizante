@@ -1,0 +1,108 @@
+/*RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILIZAÇÃO GERAL HTML E BODY*/
+html, body {
+    /*cor do fundo da tela:*/
+    background-color: rgb(90, 23, 154);
+
+    /*define que o body usará layout em grade*/
+    display: grid;
+
+    /*posiciona os itens no centro da tela (horizontal e vertical)*/
+    place-items: center;
+
+    /*faz o body ocupar toda a altura da janela*/
+    height: 100%;
+}
+
+/*ESTILIZAÇÃO DIV BOX (CAIXA DA BARRA)*/
+.box {
+    background: white;
+
+    /*espaçamento inteiro da caixa*/
+    padding: 20px 20px 20px 30px;
+
+    /*bordas levemente arredondadas*/
+    border-radius: 5px;
+
+    /*cria uma sombra descreta ao redor*/
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+
+    /*uso do flexbox para organizar os elementos*/
+    display: flex;
+
+    /*alinhamento vertical central*/
+    align-items: center;
+
+}
+
+/*ESTILIZAÇÃO BARRA*/
+.box .barra {
+
+    /*altura e largura da barra*/
+    height: 40px;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+
+    /*espaço entre a barra e o valor exibido ao lado direito*/
+    margin-right: 15px;
+}
+
+/*ESTILIZAÇÃO INPUT*/
+
+.box .barra input {
+
+    /*deixa a barra mais fina*/
+    height: 10px;
+
+    /*faz ocupar toda a largura do conteiner pai (.barra)*/
+    width: 100%;
+
+    /*remove o estilo padrão da barra no navegador*/
+    appearance: none;
+    -webkit-appearance: none;
+
+    /*remove a borda de foco padrão*/
+    outline: none;
+
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.2);
+}
+
+/*ESTILIZAÇÃO VALOR DA BARRA*/
+.box .valor {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(193, 24, 162);
+    width: 55px;
+    text-align: center;
+}
+
+/*ESTILIZAÇÃO DO BOTÃO QUE DESLIZA NA BARRA*/
+.barra input::-webkit-slider-thumb {
+
+    /*remove o estilo padrão do navegador*/
+    -webkit-appearance: none;
+    appearance: none;
+
+    /*aumenta a altura e largura da bolinha*/
+    height: 25px;
+    width: 25px;
+
+    /*cria um contorno roxo na bolinha*/
+    border: 4px solid #7d78e3;
+
+    /*deixa a bolinha mais arredondada*/
+    border-radius: 50%;
+
+    background: white;
+}
+
