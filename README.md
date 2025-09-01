@@ -17,8 +17,8 @@
 <p><strong>CSS3:</strong> Responsável por toda a estilização e personalização da barra e dos demais componentes.</p>
 <p><strong>JavaScript:</strong> Utilizado para o pequeno script que sincroniza o valor da barra com o display numérico.</p>
 
-<h2>⚙️ Como rodar</h2>
-<p>Para ver o projeto em funcionamento, basta abrir o arquivo <code>index.html</code> em qualquer navegador web. Por se tratar de um projeto estático, não há necessidade de um servidor local ou de qualquer configuração adicional.</p>
+<h2>⚙️ Como acessar</h2>
+    <p>Para ver o projeto em funcionamento, você pode acessá-lo diretamente pelo link de seu site.</p>
 
 <h2>📁 Estrutura de pastas</h2>
 <pre>
